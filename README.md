@@ -22,7 +22,7 @@ The api have 5 endpoint which in totality perform CRUD on the person resource
 ```mermaid
     erDiagram 
         Person {
-            strin String
-            id Number
+            Number id
+            String name
         }
 ```
