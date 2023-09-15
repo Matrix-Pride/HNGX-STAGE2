@@ -1,7 +1,7 @@
 const Mongoose = require('mongoose')
 const Express = require('express')
 
-Mongoose.connect("mongodb+srv://jesusCode:jesusCode@cluster0.legj65k.mongodb.net/Person?retryWrites=true&w=majority")
+Mongoose.connect(`mongodb+srv://jesusCode:${process.env.mongodb}@cluster0.legj65k.mongodb.net/Person?retryWrites=true&w=majority`)
 
 const app = Express();
 
